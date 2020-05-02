@@ -10,17 +10,34 @@ function getSomevalue(){
     console.log("Returned from 2nd fn" + somevalue); // undefined because out of scope
 }
 
+
 // arrow functions
 
             // without arrow function
+
 function greet(){
     console.log('Hello ES5');
 }
-greet();
+greet()
 
             // With arrow function
-newGreet = () => 'Hello ES6';
+
+newGreet = () => "Hello ES6";
 console.log(newGreet());
+
+// without arrow function
+function sumes5(x,y){
+    result = x+y;
+    console.log('From ES5: '+ result);
+}
+
+sumes5(200,300);
+
+// With arrow function
+
+let result2 = (x,y) => x+y;
+console.log("From ES6: " + result2(400,200));
+
 
 // strings (includes, repeat)
 
