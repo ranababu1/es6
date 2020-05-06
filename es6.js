@@ -39,9 +39,39 @@ let result2 = (x,y) => x+y;
 console.log("From ES6: " + result2(400,200));
 
 
-// strings (includes, repeat)
+// strings  -  startsWith(), endsWith(), includes, repeat
 
-// template strings
+const strVar = "Imran";
+const result3 =  strVar.startsWith('Im')
+console.log(result3); // returns boolean (either true or false)
+
+const result4 = strVar.endsWith('M');
+console.log(result4); // false 
+
+const result5 = strVar.includes('a');
+console.log(result5); // true
+
+const result6 = strVar.repeat(3);
+console.log(result6); //imranimranimran
+
+// template literals
+
+let someTemplate = `<h2>Hello there!</h2>
+<p>This is a paragraph generated using template literal.</p>`;
+document.getElementById('templateLiteral').innerHTML = someTemplate;
+
+            // using variables in template literals
+
+            let theName = "Imran";
+            function randNo(){
+                let theNumber = Math.random();
+
+                return theNumber;
+            }
+            let anotherTemplate = `<h2>Hello ${theName}</h2>
+            <p>A random number <span style="color:green;">${randNo(10)}</span> is generated using function in a template literal. </p>`;
+            document.getElementById('templateLiteralWithVar').innerHTML = anotherTemplate;
+            
 
 // destructuring  arrays / objs
 
@@ -58,4 +88,3 @@ console.log("From ES6: " + result2(400,200));
 // classes
 
 // maps - get, set, has
-
