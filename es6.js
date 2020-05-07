@@ -73,7 +73,31 @@ document.getElementById('templateLiteral').innerHTML = someTemplate;
             document.getElementById('templateLiteralWithVar').innerHTML = anotherTemplate;
             
 
-// destructuring  arrays / objs
+// destructuring  arrays / objects
+
+var favourite = {
+    color : 'black',
+    food : 'chinese',
+    game : 'CSGO',
+    number : 18
+}
+
+            //  ES5 - to access food value
+
+            var favFood = favourite.food;
+            console.log("Using ES5: " + favFood);
+
+            // ES6 - to access food value
+const {color,food,game,number} = favourite;
+console.log("Using ES6: " + food);
+
+                //or you can use your own 
+
+const {color : c, food : f, game: g, number : n } = favourite;
+console.log("Fav color using ES6: " + c);
+
+
+
 
 // module exports , imports
 
