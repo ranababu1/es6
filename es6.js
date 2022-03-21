@@ -46,7 +46,7 @@ const result3 = strVar.startsWith('Im')
 console.log(result3); // returns boolean (either true or false)
 
 const result4 = strVar.endsWith('M');
-console.log(result4); // false 
+console.log(result4); // false
 
 const result5 = strVar.includes('a');
 console.log(result5); // true
@@ -91,7 +91,7 @@ console.log("Using ES5: " + favFood);
 const { color, food, game, number } = favourite;
 console.log("Using ES6: " + food);
 
-//or you can use your own 
+//or you can use your own
 
 const { color: c, food: f, game: g, number: n } = favourite;
 console.log("Fav color using ES6: " + c);
@@ -114,3 +114,5 @@ console.log("Fav color using ES6: " + c);
 // classes
 
 // maps - get, set, has
+
+//testing a push
